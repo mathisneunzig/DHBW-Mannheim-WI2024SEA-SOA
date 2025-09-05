@@ -1,10 +1,10 @@
 # DHBW-Mannheim-WI2024SEA-SOA
 
 **Services & Ports**
-- Product Service (Python, Port 3001)
+- Product Service (Node.js, Port 3001)
   - GET /products
   - GET /products/:id
-- User Service (Go, Port 3002)
+- User Service (Node.js, Port 3002)
   - GET /users
   - GET /users/:id
 - Order Service (Node.js, Port 3003)
