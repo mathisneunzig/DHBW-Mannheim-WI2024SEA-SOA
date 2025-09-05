@@ -1,0 +1,22 @@
+{
+  "name": "soa",
+  "version": "1.0.0",
+  "description": "Beispiel für eine SOA mit einem ESB",
+  "scripts": {
+    "start:product-service": "npx ts-node microservice-a.ts",
+    "start:user-service": "npx ts-node microservice-b.ts",
+    "start:order-service": "npx ts-node microservice-c.ts",
+    "start:esb": "npx ts-node esb.ts",
+    "start": "concurrently \"npm run start:product-service\" \"npm run start:user-service\" \"npm run start:order-service\" \"npm run start:esb\""
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "concurrently": "^8.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
